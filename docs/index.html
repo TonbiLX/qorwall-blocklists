@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QorWall Blocklists — Kategori-bazlı DNS engelleme listeleri</title>
+  <meta name="description" content="QorWall Firewall için kürasyonlu DNS engelleme listeleri. Streaming, sosyal medya, kumar, oyun, reklam — TR + Global, 668 domain.">
+  <meta name="theme-color" content="#0f0f12">
+  <meta property="og:title" content="QorWall Blocklists">
+  <meta property="og:description" content="Kategori-bazlı, kürasyonlu DNS engelleme listeleri — TR + Global, 668 domain, 7 kategori, CC0 lisans">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tonbilx.github.io/qorwall-blocklists/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🛡️%3C/text%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'qw-bg': '#0a0a0d',
+            'qw-surface': '#13131a',
+            'qw-border': '#2a2a35',
+            'qw-cyan': '#00d4ff',
+            'qw-green': '#39ff14',
+            'qw-orange': '#ff6b35',
+            'qw-red': '#ff3860',
+            'qw-yellow': '#ffd60a',
+            'qw-purple': '#bd00ff',
+            'qw-pink': '#ff006e'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s ease-in-out infinite',
+            'glow': 'glow 2s ease-in-out infinite alternate'
+          },
+          keyframes: {
+            glow: {
+              '0%': { boxShadow: '0 0 20px rgba(0,212,255,0.3)' },
+              '100%': { boxShadow: '0 0 40px rgba(0,212,255,0.6)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { background: linear-gradient(180deg, #0a0a0d 0%, #0f0f12 100%); }
+    .glass { background: rgba(19,19,26,0.6); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.06); }
+    .gradient-text { background: linear-gradient(90deg, #00d4ff 0%, #39ff14 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .gradient-border { position: relative; }
+    .gradient-border::before { content: ''; position: absolute; inset: 0; padding: 1px; background: linear-gradient(135deg, rgba(0,212,255,0.4), rgba(57,255,20,0.2), rgba(0,212,255,0.0)); border-radius: inherit; -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); mask-composite: exclude; pointer-events: none; }
+    .copy-btn { transition: all 0.2s; }
+    .copy-btn:hover { transform: translateY(-1px); }
+    .copy-btn.copied { background: rgba(57,255,20,0.15) !important; border-color: rgba(57,255,20,0.5) !important; color: #39ff14 !important; }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+    .float { animation: float 6s ease-in-out infinite; }
+  </style>
+</head>
+<body class="text-gray-200 min-h-screen font-sans">
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 opacity-30">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-qw-cyan rounded-full filter blur-[120px] animate-pulse-slow"></div>
+      <div class="absolute top-40 right-20 w-96 h-96 bg-qw-green rounded-full filter blur-[140px] animate-pulse-slow" style="animation-delay: 1s"></div>
+    </div>
+    <div class="relative max-w-6xl mx-auto px-6 py-16 md:py-24 text-center">
+      <div class="inline-block float text-7xl md:text-8xl mb-6">🛡️</div>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
+        <span class="gradient-text">QorWall</span> <span class="text-white">Blocklists</span>
+      </h1>
+      <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+        Kategori-bazlı, kürasyonlu DNS engelleme listeleri.<br>
+        Türkiye'deki ev kullanıcısı için optimize · Popüler global servisler + TR yerel
+      </p>
+
+      <!-- Stats badge row -->
+      <div class="flex flex-wrap justify-center gap-3 mb-8">
+        <div class="glass px-5 py-3 rounded-2xl flex items-center gap-2.5">
+          <span class="text-qw-cyan text-2xl font-bold font-mono">668</span>
+          <span class="text-sm text-gray-400">domain</span>
+        </div>
+        <div class="glass px-5 py-3 rounded-2xl flex items-center gap-2.5">
+          <span class="text-qw-green text-2xl font-bold font-mono">7</span>
+          <span class="text-sm text-gray-400">kategori</span>
+        </div>
+        <div class="glass px-5 py-3 rounded-2xl flex items-center gap-2.5">
+          <span class="text-qw-orange text-2xl font-bold font-mono">24h</span>
+          <span class="text-sm text-gray-400">otomatik refresh</span>
+        </div>
+        <div class="glass px-5 py-3 rounded-2xl flex items-center gap-2.5">
+          <span class="text-qw-purple text-2xl font-bold">CC0</span>
+          <span class="text-sm text-gray-400">kamu malı</span>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="#listeler" class="px-6 py-3 bg-qw-cyan/15 text-qw-cyan border border-qw-cyan/40 rounded-xl font-semibold hover:bg-qw-cyan/25 transition-all">
+          📋 Listelere Git
+        </a>
+        <a href="https://github.com/TonbiLX/qorwall-blocklists" target="_blank" rel="noopener" class="px-6 py-3 bg-white/5 border border-white/10 rounded-xl font-semibold hover:bg-white/10 transition-all flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub Repo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Niçin? -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="glass rounded-3xl p-8 gradient-border">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+        <span class="text-qw-yellow">💡</span> Niçin başka bir blocklist?
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+        <p class="leading-relaxed">
+          Mevcut DNS blocklist'leri (StevenBlack, Hagezi, OISD) <strong class="text-white">global</strong> odaklı —
+          milyonlarca domain ama Türkçe streaming (BluTV, Exxen, Tabii), yerel bahis siteleri (mobilbahis, betpas)
+          ve TR e-ticaret eksik.
+        </p>
+        <p class="leading-relaxed">
+          <strong class="text-qw-cyan">QorWall Blocklists</strong> bu boşluğu doldurur:
+          <span class="text-white">TR + Global birleşik</span>, kategori-bazlı, az false-positive,
+          CDN'ler dahil (gerçek block için kritik), <span class="text-qw-green">CC0 lisans</span>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Listeler -->
+  <section id="listeler" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-2 flex items-center justify-center gap-3">
+      <span>📋</span> Listeler
+    </h2>
+    <p class="text-center text-gray-400 mb-10">Her kategori ayrı dosya · İstediğini ekle, gerisini bırak</p>
+
+    <div class="grid md:grid-cols-2 gap-4">
+      <!-- Streaming -->
+      <div class="glass rounded-2xl p-6 hover:border-qw-cyan/40 transition-all border border-transparent">
+        <div class="flex items-start justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <div class="text-3xl">🎬</div>
+            <div>
+              <h3 class="text-lg font-bold text-white">Streaming</h3>
+              <p class="text-xs text-gray-500 font-mono">streaming.txt</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 bg-qw-cyan/10 text-qw-cyan border border-qw-cyan/20 rounded-lg text-xs font-mono">132 domain</span>
+        </div>
+        <p class="text-sm text-gray-400 mb-3 leading-relaxed">YouTube, Netflix, Disney+, Prime Video, Apple TV+, HBO Max, Hulu, Twitch, Spotify, TikTok, BluTV, Exxen, Tabii, Vimeo, Dailymotion</p>
+        <div class="flex items-center gap-2">
+          <code class="flex-1 text-[10px] bg-qw-bg border border-qw-border rounded-lg px-3 py-2 font-mono text-gray-400 overflow-x-auto whitespace-nowrap">https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/streaming.txt</code>
+          <button class="copy-btn px-3 py-2 bg-qw-cyan/10 text-qw-cyan border border-qw-cyan/20 rounded-lg text-xs font-semibold" data-url="https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/streaming.txt">Kopyala</button>
+        </div>
+      </div>
+
+      <!-- Social -->
+      <div class="glass rounded-2xl p-6 hover:border-qw-pink/40 transition-all border border-transparent">
+        <div class="flex items-start justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <div class="text-3xl">💬</div>
+            <div>
+              <h3 class="text-lg font-bold text-white">Sosyal Medya</h3>
+              <p class="text-xs text-gray-500 font-mono">social.txt</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 bg-qw-pink/10 text-qw-pink border border-qw-pink/20 rounded-lg text-xs font-mono">107 domain</span>
+        </div>
+        <p class="text-sm text-gray-400 mb-3 leading-relaxed">Facebook, Instagram, X (Twitter), Snapchat, LinkedIn, Reddit, Threads, Pinterest, Discord, Telegram, Bluesky, WhatsApp Web</p>
+        <div class="flex items-center gap-2">
+          <code class="flex-1 text-[10px] bg-qw-bg border border-qw-border rounded-lg px-3 py-2 font-mono text-gray-400 overflow-x-auto whitespace-nowrap">https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/social.txt</code>
+          <button class="copy-btn px-3 py-2 bg-qw-pink/10 text-qw-pink border border-qw-pink/20 rounded-lg text-xs font-semibold" data-url="https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/social.txt">Kopyala</button>
+        </div>
+      </div>
+
+      <!-- Games -->
+      <div class="glass rounded-2xl p-6 hover:border-qw-green/40 transition-all border border-transparent">
+        <div class="flex items-start justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <div class="text-3xl">🎮</div>
+            <div>
+              <h3 class="text-lg font-bold text-white">Oyun Siteleri</h3>
+              <p class="text-xs text-gray-500 font-mono">games.txt</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 bg-qw-green/10 text-qw-green border border-qw-green/20 rounded-lg text-xs font-mono">83 domain</span>
+        </div>
+        <p class="text-sm text-gray-400 mb-3 leading-relaxed">Steam, Epic Games, Roblox, Minecraft, Battle.net, EA, Riot, online oyun siteleri, cloud gaming (Xbox Cloud, GeForce Now)</p>
+        <div class="flex items-center gap-2">
+          <code class="flex-1 text-[10px] bg-qw-bg border border-qw-border rounded-lg px-3 py-2 font-mono text-gray-400 overflow-x-auto whitespace-nowrap">https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/games.txt</code>
+          <button class="copy-btn px-3 py-2 bg-qw-green/10 text-qw-green border border-qw-green/20 rounded-lg text-xs font-semibold" data-url="https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/games.txt">Kopyala</button>
+        </div>
+      </div>
+
+      <!-- Adult -->
+      <div class="glass rounded-2xl p-6 hover:border-qw-red/40 transition-all border border-transparent">
+        <div class="flex items-start justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <div class="text-3xl">🚫</div>
+            <div>
+              <h3 class="text-lg font-bold text-white">Yetişkin İçerik</h3>
+              <p class="text-xs text-gray-500 font-mono">adult.txt</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 bg-qw-red/10 text-qw-red border border-qw-red/20 rounded-lg text-xs font-mono">72 domain</span>
+        </div>
+        <p class="text-sm text-gray-400 mb-3 leading-relaxed">Pornografi siteleri ana domainleri (CDN dahil), cam siteleri, OnlyFans, hentai/animation</p>
+        <div class="flex items-center gap-2">
+          <code class="flex-1 text-[10px] bg-qw-bg border border-qw-border rounded-lg px-3 py-2 font-mono text-gray-400 overflow-x-auto whitespace-nowrap">https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/adult.txt</code>
+          <button class="copy-btn px-3 py-2 bg-qw-red/10 text-qw-red border border-qw-red/20 rounded-lg text-xs font-semibold" data-url="https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/adult.txt">Kopyala</button>
+        </div>
+      </div>
+
+      <!-- Gambling -->
+      <div class="glass rounded-2xl p-6 hover:border-qw-orange/40 transition-all border border-transparent">
+        <div class="flex items-start justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <div class="text-3xl">🎰</div>
+            <div>
+              <h3 class="text-lg font-bold text-white">Kumar</h3>
+              <p class="text-xs text-gray-500 font-mono">gambling.txt</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 bg-qw-orange/10 text-qw-orange border border-qw-orange/20 rounded-lg text-xs font-mono">123 domain</span>
+        </div>
+        <p class="text-sm text-gray-400 mb-3 leading-relaxed">İddaa, casino, slot, poker — Türkiye yasaklı bahis siteleri (mobilbahis, betpas, restbet) + global devler (Bet365, 1xbet, Pokerstars)</p>
+        <div class="flex items-center gap-2">
+          <code class="flex-1 text-[10px] bg-qw-bg border border-qw-border rounded-lg px-3 py-2 font-mono text-gray-400 overflow-x-auto whitespace-nowrap">https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/gambling.txt</code>
+          <button class="copy-btn px-3 py-2 bg-qw-orange/10 text-qw-orange border border-qw-orange/20 rounded-lg text-xs font-semibold" data-url="https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/gambling.txt">Kopyala</button>
+        </div>
+      </div>
+
+      <!-- Ads -->
+      <div class="glass rounded-2xl p-6 hover:border-qw-yellow/40 transition-all border border-transparent">
+        <div class="flex items-start justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <div class="text-3xl">📢</div>
+            <div>
+              <h3 class="text-lg font-bold text-white">Reklamlar</h3>
+              <p class="text-xs text-gray-500 font-mono">ads.txt</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 bg-qw-yellow/10 text-qw-yellow border border-qw-yellow/20 rounded-lg text-xs font-mono">84 domain</span>
+        </div>
+        <p class="text-sm text-gray-400 mb-3 leading-relaxed">Google Ads, Meta Ads, Adobe, Yahoo reklam ağları + takip pikselleri (Hotjar, Mixpanel, Sentry, Crashlytics)</p>
+        <div class="flex items-center gap-2">
+          <code class="flex-1 text-[10px] bg-qw-bg border border-qw-border rounded-lg px-3 py-2 font-mono text-gray-400 overflow-x-auto whitespace-nowrap">https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/ads.txt</code>
+          <button class="copy-btn px-3 py-2 bg-qw-yellow/10 text-qw-yellow border border-qw-yellow/20 rounded-lg text-xs font-semibold" data-url="https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/ads.txt">Kopyala</button>
+        </div>
+      </div>
+
+      <!-- Shopping -->
+      <div class="glass rounded-2xl p-6 hover:border-qw-purple/40 transition-all border border-transparent md:col-span-2">
+        <div class="flex items-start justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <div class="text-3xl">🛒</div>
+            <div>
+              <h3 class="text-lg font-bold text-white">Alışveriş</h3>
+              <p class="text-xs text-gray-500 font-mono">shopping.txt</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 bg-qw-purple/10 text-qw-purple border border-qw-purple/20 rounded-lg text-xs font-mono">67 domain</span>
+        </div>
+        <p class="text-sm text-gray-400 mb-3 leading-relaxed">Trendyol, Hepsiburada, Amazon, AliExpress, Shein, Temu, Getir, Yemeksepeti, ASOS, Zara — çalışma/ders saatlerinde dikkat dağılmasını engellemek için</p>
+        <div class="flex items-center gap-2">
+          <code class="flex-1 text-[10px] bg-qw-bg border border-qw-border rounded-lg px-3 py-2 font-mono text-gray-400 overflow-x-auto whitespace-nowrap">https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/shopping.txt</code>
+          <button class="copy-btn px-3 py-2 bg-qw-purple/10 text-qw-purple border border-qw-purple/20 rounded-lg text-xs font-semibold" data-url="https://raw.githubusercontent.com/TonbiLX/qorwall-blocklists/main/shopping.txt">Kopyala</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Kullanım -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 flex items-center justify-center gap-3">
+      <span>🚀</span> Kullanım
+    </h2>
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="glass rounded-2xl p-6">
+        <div class="text-2xl mb-3">🛡️</div>
+        <h3 class="font-bold text-qw-cyan mb-2">QorWall</h3>
+        <ol class="text-sm text-gray-400 space-y-1.5 leading-relaxed list-decimal list-inside">
+          <li>İçerik Filtreleri sayfası</li>
+          <li>Kategori → Düzenle</li>
+          <li>+ Yeni Liste Ekle</li>
+          <li>URL yapıştır → Domain List</li>
+          <li>Refresh: 24h</li>
+        </ol>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <div class="text-2xl mb-3">🕳️</div>
+        <h3 class="font-bold text-qw-green mb-2">Pi-hole</h3>
+        <ol class="text-sm text-gray-400 space-y-1.5 leading-relaxed list-decimal list-inside">
+          <li>Adlists sayfası</li>
+          <li>Add a new adlist</li>
+          <li>URL yapıştır</li>
+          <li>Tools → Update Gravity</li>
+        </ol>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <div class="text-2xl mb-3">🛡️</div>
+        <h3 class="font-bold text-qw-orange mb-2">AdGuard Home</h3>
+        <ol class="text-sm text-gray-400 space-y-1.5 leading-relaxed list-decimal list-inside">
+          <li>Filters → DNS blocklists</li>
+          <li>Add blocklist → Custom</li>
+          <li>URL yapıştır</li>
+          <li>Save</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Format -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-2 flex items-center justify-center gap-3">
+      <span>📐</span> Format
+    </h2>
+    <p class="text-center text-gray-400 mb-8">Plain <code class="text-qw-cyan">domain_list</code> — basit, evrensel, hızlı parse</p>
+
+    <div class="glass rounded-2xl p-6 max-w-2xl mx-auto">
+      <pre class="text-sm font-mono text-gray-300 leading-relaxed overflow-x-auto"><code><span class="text-qw-green"># Yorum satiri (# ile baslar)</span>
+example.com
+www.example.com
+cdn.example.com
+
+<span class="text-qw-green"># Bos satirlar OK</span>
+api.example.com</code></pre>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="max-w-6xl mx-auto px-6 py-12 border-t border-white/5 mt-12">
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <h4 class="font-bold text-white mb-3 flex items-center gap-2">🛡️ QorWall Blocklists</h4>
+        <p class="text-sm text-gray-400 leading-relaxed">Kategori-bazlı DNS engelleme listeleri · TR + Global · CC0 kamu malı</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-3">Bağlantılar</h4>
+        <ul class="text-sm text-gray-400 space-y-2">
+          <li><a href="https://github.com/TonbiLX/qorwall-blocklists" class="hover:text-qw-cyan transition-colors">GitHub Repo</a></li>
+          <li><a href="https://github.com/TonbiLX/TonbilAiFirewallv5" class="hover:text-qw-cyan transition-colors">QorWall Firewall</a></li>
+          <li><a href="https://github.com/TonbiLX/qorwall-blocklists/issues" class="hover:text-qw-cyan transition-colors">Issue Aç</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-3">İlgili Projeler</h4>
+        <ul class="text-sm text-gray-400 space-y-2">
+          <li><a href="https://github.com/hagezi/dns-blocklists" class="hover:text-qw-cyan transition-colors">Hagezi DNS Blocklists</a></li>
+          <li><a href="https://github.com/StevenBlack/hosts" class="hover:text-qw-cyan transition-colors">StevenBlack/hosts</a></li>
+          <li><a href="https://oisd.nl/" class="hover:text-qw-cyan transition-colors">OISD</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-xs text-gray-500 pt-6 border-t border-white/5">
+      Made with 🛡️ by <a href="https://github.com/TonbiLX" class="text-qw-cyan hover:underline">TonbiLX</a> · Lisans <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="text-qw-cyan hover:underline">CC0 1.0</a> · Part of <a href="https://github.com/TonbiLX/TonbilAiFirewallv5" class="text-qw-cyan hover:underline">QorWall Firewall</a>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 px-5 py-3 bg-qw-green/15 text-qw-green border border-qw-green/40 rounded-2xl text-sm font-semibold shadow-2xl opacity-0 pointer-events-none transition-all duration-300 backdrop-blur-xl z-50">
+    ✓ URL kopyalandı
+  </div>
+
+  <script>
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const url = btn.dataset.url;
+        try {
+          await navigator.clipboard.writeText(url);
+          const original = btn.textContent;
+          btn.classList.add('copied');
+          btn.textContent = '✓ Kopyalandı';
+          showToast();
+          setTimeout(() => {
+            btn.classList.remove('copied');
+            btn.textContent = original;
+          }, 2000);
+        } catch (e) {
+          alert('Kopyalama başarısız: ' + url);
+        }
+      });
+    });
+
+    function showToast() {
+      const toast = document.getElementById('toast');
+      toast.style.opacity = '1';
+      toast.style.transform = 'translate(-50%, 0)';
+      setTimeout(() => {
+        toast.style.opacity = '0';
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
