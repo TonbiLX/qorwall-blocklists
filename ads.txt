@@ -1,0 +1,115 @@
+# ============================================================================
+# QorWall Ads & Trackers Blocklist
+# Hedef: Reklam aglari, takip pikselleri, analitik servisler
+# Format: domain_list
+# Lisans: CC0 1.0
+# Repo: https://github.com/TonbiLX/qorwall-blocklists
+# NOT: Bu liste BASE seviyede. Daha kapsamli reklam koruma icin AdGuard DNS
+#      Filter veya Hagezi Pro genel sistem (DnsBlockingPage) listelerini
+#      kullanin (1.15M+ domain). Bu liste sadece "minimum kategori-spesifik"
+#      koruma icin.
+# ============================================================================
+
+# ===== Google reklamlari =====
+doubleclick.net
+googleadservices.com
+googlesyndication.com
+googletagmanager.com
+googletagservices.com
+google-analytics.com
+adservice.google.com
+ad.doubleclick.net
+ads.google.com
+admob.com
+googleads.g.doubleclick.net
+pagead2.googlesyndication.com
+tpc.googlesyndication.com
+
+# ===== Facebook / Meta reklamlari =====
+ads-fb.com
+an.facebook.com
+adsmanager.facebook.com
+ads.facebook.com
+business.facebook.com/ads
+connect.facebook.net
+pixel.facebook.com
+
+# ===== Microsoft / Bing reklamlari =====
+bat.bing.com
+ads.microsoft.com
+ads.msn.com
+clarity.ms
+www.clarity.ms
+
+# ===== Adobe (analitik) =====
+adobedtm.com
+demdex.net
+omtrdc.net
+adobe.demdex.net
+2o7.net
+sc.omtrdc.net
+
+# ===== Yahoo / AOL / Verizon reklamlari =====
+ads.yahoo.com
+advertising.yahoo.com
+analytics.yahoo.com
+adservex.com
+
+# ===== Diger reklam aglari =====
+amazon-adsystem.com
+adsystem.amazon.com
+quantserve.com
+quantcount.com
+scorecardresearch.com
+outbrain.com
+mc.yandex.com
+mc.yandex.ru
+metrika.yandex.ru
+zedo.com
+casalemedia.com
+adnxs.com
+adsrvr.org
+mathtag.com
+rubiconproject.com
+pubmatic.com
+openx.net
+contextweb.com
+3lift.com
+33across.com
+tribalfusion.com
+revcontent.com
+taboola.com
+spotxchange.com
+
+# ===== Takip pikselleri =====
+hotjar.com
+mouseflow.com
+fullstory.com
+mixpanel.com
+segment.io
+segment.com
+amplitude.com
+heap.io
+newrelic.com
+nr-data.net
+crashlytics.com
+sentry.io
+
+# ===== Email tracking =====
+mailchimp.com (analytics)
+list-manage.com
+mc.us2.list-manage.com
+sendgrid.net
+constantcontact.com
+
+# ===== Mobile reklam SDK =====
+appsflyer.com
+adjust.com
+branch.io
+kochava.com
+iadsdk.apple.com
+
+# ===== Turkce reklam agi =====
+gemiusdesktop.com
+gemius.com
+ekolay.net (analitik)

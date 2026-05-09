@@ -1,0 +1,96 @@
+# ============================================================================
+# QorWall Adult Content Blocklist
+# Hedef: Yetiskin (18+) icerik siteleri
+# Format: domain_list
+# Lisans: CC0 1.0
+# Repo: https://github.com/TonbiLX/qorwall-blocklists
+# NOT: Bu liste populer adult sitelerin temelini icerir. Daha kapsamli koruma
+#      icin BlocklistProject Porn (~25K) veya Hagezi adult listelerini de
+#      ekleyin (combined: HEM bu, HEM 25K liste).
+# ============================================================================
+
+# ===== En populer adult sitelerin ana domainleri =====
+pornhub.com
+www.pornhub.com
+m.pornhub.com
+xvideos.com
+www.xvideos.com
+xvideos2.com
+xnxx.com
+www.xnxx.com
+m.xnxx.com
+xhamster.com
+www.xhamster.com
+xhamster2.com
+xhamsterlive.com
+youporn.com
+www.youporn.com
+redtube.com
+www.redtube.com
+spankbang.com
+www.spankbang.com
+tnaflix.com
+beeg.com
+www.beeg.com
+
+# ===== Subdomains ve mirror'lar =====
+ph-static.com
+phncdn.com
+phncdn.com
+phprcdn.com
+phaws.com
+trafficjunky.com
+trafficjunky.net
+trafficstars.com
+
+# ===== Cam siteleri =====
+chaturbate.com
+www.chaturbate.com
+stripchat.com
+www.stripchat.com
+livejasmin.com
+www.livejasmin.com
+cam4.com
+www.cam4.com
+bongacams.com
+www.bongacams.com
+streamate.com
+www.streamate.com
+camsoda.com
+flirt4free.com
+
+# ===== Subscription / amateur =====
+onlyfans.com
+www.onlyfans.com
+fansly.com
+manyvids.com
+fancentro.com
+clips4sale.com
+
+# ===== Diger populer =====
+eporner.com
+hclips.com
+nuvid.com
+porntrex.com
+porn.com
+porntube.com
+empflix.com
+hqporner.com
+xtube.com
+hpjav.tv
+javhd.com
+
+# ===== Türkce =====
+turkpornosu.com
+turkifsa.life
+turkifsa.click
+
+# ===== Hentai / animation =====
+nhentai.net
+www.nhentai.net
+hentaihaven.org
+www.hentaihaven.org
+e-hentai.org
+exhentai.org
+hanime.tv
+www.hanime.tv

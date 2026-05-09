@@ -1,0 +1,146 @@
+# ============================================================================
+# QorWall Social Media Blocklist
+# Hedef: Sosyal medya platformlari
+# Format: domain_list
+# Lisans: CC0 1.0
+# Repo: https://github.com/TonbiLX/qorwall-blocklists
+# ============================================================================
+
+# ===== Facebook / Meta =====
+facebook.com
+www.facebook.com
+m.facebook.com
+mobile.facebook.com
+business.facebook.com
+fb.com
+fb.me
+fbcdn.net
+fbsbx.com
+fbthumb.com
+graph.facebook.com
+api.facebook.com
+edge-mqtt.facebook.com
+star.c10r.facebook.com
+meta.com
+www.meta.com
+metacdn.com
+
+# ===== Instagram =====
+instagram.com
+www.instagram.com
+m.instagram.com
+help.instagram.com
+api.instagram.com
+i.instagram.com
+graph.instagram.com
+cdninstagram.com
+instagramstatic-a.akamaihd.net
+ig.me
+
+# ===== Twitter / X =====
+twitter.com
+www.twitter.com
+mobile.twitter.com
+m.twitter.com
+api.twitter.com
+twimg.com
+abs.twimg.com
+ton.twimg.com
+video.twimg.com
+pbs.twimg.com
+x.com
+www.x.com
+mobile.x.com
+api.x.com
+
+# ===== TikTok (sosyal medya yonu — streaming.txt'de de var) =====
+tiktok.com
+www.tiktok.com
+m.tiktok.com
+
+# ===== Snapchat =====
+snapchat.com
+www.snapchat.com
+accounts.snapchat.com
+sc-cdn.net
+snap-dev.net
+
+# ===== LinkedIn =====
+linkedin.com
+www.linkedin.com
+licdn.com
+media.licdn.com
+
+# ===== Reddit =====
+reddit.com
+www.reddit.com
+old.reddit.com
+new.reddit.com
+api.reddit.com
+oauth.reddit.com
+redd.it
+redditmedia.com
+redditstatic.com
+redditstatus.com
+v.redd.it
+i.redd.it
+
+# ===== Threads (Meta) =====
+threads.net
+www.threads.net
+threads.com
+
+# ===== Pinterest =====
+pinterest.com
+www.pinterest.com
+pinimg.com
+i.pinimg.com
+pinterestmail.com
+
+# ===== Discord =====
+discord.com
+www.discord.com
+discordapp.com
+discord.gg
+cdn.discordapp.com
+media.discordapp.net
+gateway.discord.gg
+
+# ===== Telegram (web) =====
+telegram.org
+www.telegram.org
+web.telegram.org
+t.me
+telegram.me
+
+# ===== WhatsApp Web =====
+whatsapp.com
+www.whatsapp.com
+web.whatsapp.com
+api.whatsapp.com
+
+# ===== Bluesky =====
+bsky.app
+bsky.social
+bsky.network
+
+# ===== Mastodon (orneker) =====
+mastodon.social
+mas.to
+mastodon.online
+
+# ===== Tumblr =====
+tumblr.com
+www.tumblr.com
+media.tumblr.com
+
+# ===== Diger =====
+quora.com
+www.quora.com
+9gag.com
+imgur.com
+www.imgur.com
+tinder.com
+www.tinder.com
+bumble.com
+hinge.co

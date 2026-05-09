@@ -1,0 +1,84 @@
+# ============================================================================
+# QorWall Shopping Blocklist
+# Hedef: Online alisveris siteleri (TR + global)
+# Format: domain_list
+# Lisans: CC0 1.0
+# Repo: https://github.com/TonbiLX/qorwall-blocklists
+# NOT: Tipik kullanim — calisma saatlerinde dikkat dağılmasını engellemek,
+#      cocuklarin in-app satin almalari icin.
+# ============================================================================
+
+# ===== Turkce alisveris =====
+trendyol.com
+www.trendyol.com
+m.trendyol.com
+hepsiburada.com
+www.hepsiburada.com
+m.hepsiburada.com
+n11.com
+www.n11.com
+gittigidiyor.com
+www.gittigidiyor.com
+amazon.com.tr
+www.amazon.com.tr
+ciceksepeti.com
+www.ciceksepeti.com
+modanisa.com
+www.modanisa.com
+boyner.com
+www.boyner.com
+mediamarkt.com.tr
+teknosa.com
+vatanbilgisayar.com
+ikea.com.tr
+ikea.com
+beymen.com
+defacto.com.tr
+
+# ===== Global alisveris =====
+amazon.com
+www.amazon.com
+amazon.co.uk
+amazon.de
+amazon.fr
+amazon.es
+amazon.it
+ebay.com
+www.ebay.com
+aliexpress.com
+www.aliexpress.com
+alibaba.com
+www.alibaba.com
+shein.com
+www.shein.com
+temu.com
+www.temu.com
+wish.com
+www.wish.com
+etsy.com
+www.etsy.com
+
+# ===== Hizli teslimat =====
+getir.com
+www.getir.com
+yemeksepeti.com
+www.yemeksepeti.com
+trendyolgo.com
+banabi.com
+ekmekapp.com
+gofody.com
+migros.com.tr
+carrefoursa.com
+
+# ===== Gardrop / moda =====
+zara.com
+www.zara.com
+hm.com
+www.hm.com
+mango.com
+www.mango.com
+asos.com
+www.asos.com
+zalando.com
+www.zalando.com
+zalando.com.tr

@@ -1,0 +1,123 @@
+# ============================================================================
+# QorWall Gaming Blocklist
+# Hedef: Oyun platformlari, online oyunlar, oyun magazalari
+# Format: domain_list
+# Lisans: CC0 1.0
+# Repo: https://github.com/TonbiLX/qorwall-blocklists
+# NOT: Steam ve Epic Games tam blok edilirse oyun calismaz. Sadece magaza
+#      sayfasini blok etmek icin store.steampowered.com ve store.epicgames.com
+#      eklenmistir; oyun guncellemeleri/oturumu icin temel CDN'ler dısarıda.
+# ============================================================================
+
+# ===== Steam =====
+store.steampowered.com
+help.steampowered.com
+steamcommunity.com
+www.steamcommunity.com
+
+# ===== Epic Games =====
+store.epicgames.com
+www.epicgames.com
+launcher-public-service-prod06.ol.epicgames.com
+
+# ===== Roblox =====
+roblox.com
+www.roblox.com
+web.roblox.com
+api.roblox.com
+m.roblox.com
+rbxcdn.com
+roblox-cdn.com
+roblox.io
+
+# ===== Minecraft =====
+minecraft.net
+www.minecraft.net
+launcher.mojang.com
+authserver.mojang.com
+api.mojang.com
+session.minecraft.net
+realms.minecraft.net
+
+# ===== Battle.net (Blizzard) =====
+battle.net
+www.battle.net
+us.battle.net
+eu.battle.net
+shop.battle.net
+account.battle.net
+
+# ===== EA / Origin =====
+ea.com
+www.ea.com
+store.ea.com
+origin.com
+www.origin.com
+
+# ===== Ubisoft =====
+ubisoft.com
+www.ubisoft.com
+store.ubisoft.com
+account.ubisoft.com
+
+# ===== Riot Games =====
+riotgames.com
+www.riotgames.com
+leagueoflegends.com
+www.leagueoflegends.com
+playvalorant.com
+
+# ===== Online oyun siteleri =====
+miniclip.com
+www.miniclip.com
+poki.com
+www.poki.com
+crazygames.com
+www.crazygames.com
+y8.com
+www.y8.com
+kongregate.com
+www.kongregate.com
+agame.com
+addictinggames.com
+gamesgames.com
+
+# ===== Mobil oyun magazalari (genelde global blok zor) =====
+play.google.com/store/apps/category/GAME
+apps.apple.com/category/games
+
+# ===== Stream/discord oyun =====
+discord.com
+discord.gg
+
+# ===== Turkce oyun =====
+mynet.com/oyun
+oyun.gen.tr
+www.oyun.gen.tr
+oyna.com.tr
+www.oyna.com.tr
+
+# ===== Browser games =====
+agar.io
+slither.io
+krunker.io
+diep.io
+zombs.io
+shellshock.io
+
+# ===== eSports / oyun video =====
+twitch.tv
+www.twitch.tv
+chess.com
+www.chess.com
+lichess.org
+
+# ===== Cloud gaming =====
+xbox.com
+www.xbox.com
+xbox.cloud
+geforcenow.com
+www.geforcenow.com
+play.geforcenow.com
+stadia.google.com
+luna.amazon.com

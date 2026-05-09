@@ -1,0 +1,149 @@
+# ============================================================================
+# QorWall Gambling Blocklist
+# Hedef: Kumar, bahis, casino, slot, poker siteleri (TR + global)
+# Format: domain_list
+# Lisans: CC0 1.0
+# Repo: https://github.com/TonbiLX/qorwall-blocklists
+# NOT: Türkiye'de yasaklı bahis siteleri sürekli yeni domain üretir. Bu liste
+#      en yaygın olanları içerir. Daha kapsamlı için USOM ve BTK'nin yasaklı
+#      site listeleri de eklenebilir.
+# ============================================================================
+
+# ===== Global bahis devleri =====
+bet365.com
+www.bet365.com
+mobile.bet365.com
+bet365bonusinfo.com
+bwin.com
+www.bwin.com
+mobilebwin.com
+betway.com
+www.betway.com
+unibet.com
+www.unibet.com
+1xbet.com
+www.1xbet.com
+mobi-1xbet.com
+22bet.com
+www.22bet.com
+melbet.com
+www.melbet.com
+parimatch.com
+www.parimatch.com
+
+# ===== Casino =====
+pokerstars.com
+www.pokerstars.com
+pokerstars.eu
+party.com
+partypoker.com
+casino.com
+www.casino.com
+royalvegascasino.com
+betway.casino
+william-hill.com
+williamhill.com
+slotsmillion.com
+casumo.com
+www.casumo.com
+leovegas.com
+www.leovegas.com
+mrgreen.com
+www.mrgreen.com
+
+# ===== Türkiye yasakli bahis (yaygin) =====
+mobilbahis.com
+mobilbahis64.com
+mobilbahis78.com
+trbet.com
+trbetnet.com
+youwin.com
+youwin27.com
+betboo.com
+betboo575.com
+sportingbet.com
+sportingbet154.com
+superbet.com
+betmatik.com
+mostbet.com
+mostbet-tr.com
+betebet.com
+betebet1078.com
+imajbet.com
+imajbet601.com
+betpas.com
+betpas180.com
+restbet.com
+restbet1.com
+piabet.com
+piabet96.com
+maltbahis.com
+hilbet.com
+artemisbet.com
+celtabet.com
+elexbet.com
+fenomenbet.com
+holiganbet.com
+bahsegel.com
+nakitbahis.com
+betvole.com
+betpark.com
+betlio.com
+betgaranti.com
+bets10.com
+mybahis.com
+hiltonbet.com
+casinometropol.com
+casinomaxi.com
+casinopop.com
+bonusyolu.com
+
+# ===== Iddaa-tarzi =====
+iddaa.com
+www.iddaa.com
+nesine.com
+www.nesine.com
+oley.com
+www.oley.com
+bilyoner.com
+www.bilyoner.com
+misli.com
+www.misli.com
+tuttur.com
+www.tuttur.com
+
+# ===== Poker / oyun =====
+ggpoker.com
+www.ggpoker.com
+americascardroom.eu
+acrpoker.eu
+ipoker.com
+zynga.com
+www.zynga.com
+
+# ===== Slot online =====
+slotomania.com
+doubledowncasino.com
+playzee.com
+slottica.com
+
+# ===== Crypto gambling =====
+stake.com
+www.stake.com
+bc.game
+duelbits.com
+roobet.com
+www.roobet.com
+gamdom.com
+csgoroll.com
+
+# ===== Diger =====
+unibet.eu
+ladbrokes.com
+betfair.com
+www.betfair.com
+sky.bet
+skybet.com
+ladbrokescoral.com
+paddypower.com
+wsop.com
